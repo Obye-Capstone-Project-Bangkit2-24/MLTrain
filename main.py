@@ -81,7 +81,6 @@ async def predict(input_data: PredictionInput):
 
         # Mengembalikan hasil prediksi
         return {
-            "probabilities": predictions.tolist(),
             "predicted_class": predicted_label
         }
 
