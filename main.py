@@ -36,6 +36,7 @@ class PredictionInput(BaseModel):
     time_using_devices: int
     alcohol_consumption: int
     transportation: int
+    obesity: int
 
 # Endpoint root
 @app.get("/")
@@ -64,7 +65,8 @@ async def predict(input_data: PredictionInput):
                 input_data.physical_activity_freq,
                 input_data.time_using_devices,
                 input_data.alcohol_consumption,
-                input_data.transportation
+                input_data.transportation,
+                input_data.obesity,
             ]
         ])
 
