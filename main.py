@@ -43,7 +43,7 @@ class PredictionInput(BaseModel):
 def save_to_db(data: PredictionInput, predicted_class: str):
     try:
         conn = mysql.connector.connect(
-            host="34.31.54.153",
+            host="35.194.0.57",
             user="root",
             password="123456789",
             database="obye_db"
